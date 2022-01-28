@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2021 MINI HOMEPAGE</title>
+    <link rel="stylesheet" href="./static/home.css" />
+    <link rel="stylesheet" href="./static/layer.css">
+    <link rel="stylesheet" href="./static/font.css">
+    <link rel="stylesheet" href="./static/diary.css">
+    <script src="https://kit.fontawesome.com/13d32d0a04.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="bookcover">
+      <div class="bookdot">
+        <div class="page">
+          <div class="column4" style="margin-right: 20px"> 
+            <div class="column1 name_box1">
+              <div>Today <span style="color: red;">2022</span> &#124;Total 234918</div>
+            </div>
+            <div class="column2 content_box">
+              <div class="png_box">
+                <img src="tiger.PNG" width="100%" height="100%">
+              </div>
+              <div class="content_box2">
+                <p>옛 조상들은 호랑이를 범이라고 불렀으며 산신령(山神靈)·산군(山君)으로, 백두산 인근에서는 노야(老爺)·대부(大父)로 여겼다.</p>
+              </div>
+              <div class="etc_box">
+                <select onchange="window.open(value,'_self');">
+                  <option>파도타기</option>
+                  <option value="https://codemate.kr/explore/projects">코뮤니티 모각코</option>
+                  <option value="https://cafe.naver.com/codeuniv?iframe_url_utf8=%2FArticleRead.nhn%3Fclubid%3D30026525%26articleid%3D59487">코뮤니티 네이버 카페</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="column3">
+            <div class="row1">
+              <div class="column7 name_box2">
+                <div>호랑이의 추억 상ㅈr...♡(๑˃̵ᴗ˂̵)و ♡</div>
+              </div>
+              <div class="column7 name_box3">
+                <div class="small_box"></div>
+                <div class="small_box">
+                  <div class="small_box"></div>
+                  <div class="small_box"></div>
+                  <div class="small_box">http://url주소/나중에입력</div>
+                </div>
+              </div>
+            </div>
+            <div class="column6 content_box scroll">
+                <div class="temp_box">
+                    <div class="today">2/15 Tue</div>
+                    <div class="calender">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div style="color:blue;">5</div>
+                        <div style="color:red;">6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div style="color:blue;">12</div>
+                        <div style="color:red;">13</div>
+                        <div>14</div>
+                        <div>15</div>
+                        <div>16</div>
+                        <div>17</div>
+                        <div>18</div>
+                        <div style="color:blue;">19</div>
+                        <div style="color:red;">20</div>
+                        <div>21</div>
+                        <div>22</div>
+                        <div>23</div>
+                        <div>24</div>
+                        <div>25</div>
+                        <div style="color:blue;">26</div>
+                        <div style="color:red;">27</div>
+                        <div>28</div>
+                        <div>29</div>
+                        <div>30</div>
+                        <div>31</div>
+                    </div>
+                </div>
+                <div class="big_box scroll">
+                    <div class="mid_box">
+                        <div class="time_box">
+                            2/15 Tue 13:12:21
+                        </div>
+                        <div class="text_box">
+                            똑똑..
+                            <br>문열어주세여
+                            <br>당신의...
+                            <br>마음의 문을..
+        
+                        </div>
+                        <div class="time_box">
+                            2/16 Wed 21:10:23
+                        </div>
+                        <div class="text_box">
+                            햇살이 눈부신 날에는
+                            <br>유리병에 담아두고 싶어
+                            <br>너의 마음이 흐린 날에
+                            <br>너에게
+                            <br>선물하려구...♡
+                        </div>
+                        <div class="time_box">
+                            2/21 Mon 07:20:55
+                        </div>
+                        <div class="text_box">
+                            세상에는
+                            <br>초코우유도 있고
+                            <br>딸기우유도 있고
+                            <br>바나나우유도 있는데
+                            <br>내가 너에게 주고싶은 우유는...
+                            <br>알럽우유(๑˃̵ᴗ˂̵)و
+                        </div>
+                    </div>
+                    <div class="center">
+                      <div class="secret">
+                        <button onclick="get_text_file()"><i class="fas fa-unlock-alt"> 비밀 일기장</i></button>
+                          <script>
+                            function get_text_file() {
+                              var input = document.createElement("input");
+                              input.type = "file";
+                              input.accept = "text/plain";
+                              input.onchange = function(event) {
+                                processFile(event.target.files[0]);
+                              };
+                              input.click();
+                            }
+                            function processFile(file) {
+                              var reader = new FileReader();
+                              reader.readAsText(file, "utf-8");
+                              reader.onload= function () {
+                                document.getElementById("text").innerText=reader.result;
+                                document.getElementById("sBox").style.display = "block";
+                              };
+                            }
+                          </script>
+                      </div>
+                    </div>
+                    <div class="mid_box" id="sBox">
+                      <div class="time_box">호랑이의 비밀일기</div>
+                      <div class="text_box" id="text"></div>
+                    </div>  
+                </div>   
+            </div>
+          </div>
+          <div class="column5 menu_box">
+            <div class="container">
+              <div class="mini_box"><a href="home.html">홈화면</a></div>
+              <div class="mini_box"><a href="#">게시판</a></div>
+              <div class="mini_box"><a href="gallary.html">사진첩</a></div>
+              <div class="present_box "><a href="diary.html"style="color: rgb(238, 107, 107);">다이어리</a></div>
+              <div class="mini_box"><a href="guest_book.html">방명록</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

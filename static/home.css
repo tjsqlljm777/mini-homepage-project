@@ -1,0 +1,198 @@
+body {
+  background-color: #a3a3a3;
+  background-image: url("../static/images/pattern.png");
+  background-size: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-family: 'GilbeotRainbow';
+  font-size: 17px;
+}
+a{
+  text-decoration-line: none;
+}
+.bookcover {
+  background-color: #b4d1da;
+  border-radius: 9px;
+  border: 1px solid #738186;
+  width: 960px;
+  height: 660px;
+  margin: 100px auto;
+  display: flex;
+}
+
+.bookdot {
+  background-color: none;
+  border-radius: 9px;
+  border: white dashed;
+  padding: 5px;
+  display: flex;
+  flex: 5px;
+  margin: 15px;
+}
+
+.page {
+  background-color:rgb(230, 228, 228);
+  flex: 5px;
+  border-radius: 9px;
+  padding: 8px;
+  display: flex;
+  margin: 8px;
+}
+
+.column1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.column2 {
+  flex: 15;
+  display: flex;
+  flex-direction: column;
+}
+.column3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.column4 {
+  flex: 0.35;
+  display: flex;
+  flex-direction: column;
+}
+.column5 {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+}
+
+.column7 {
+  flex: 1;
+  display: flex;
+  text-align:end;
+}
+.row1 {
+  flex: 0.13;
+  display: flex;
+  flex-direction: row;
+}
+.name_box1 {
+  text-align: center;
+}
+.name_box2 {
+  text-align: center;
+}
+.name_box3 {
+  font-size: 12px;
+  text-align: end;
+  flex-direction: row; 
+}
+.small_box {
+  display: flex;
+  text-align: end;
+  flex: 1;
+  font-size: 13px;
+  flex-direction: column; 
+}
+.menu_box {
+  border: solid rgb(161, 161, 161) 1px;
+  margin: 10px;
+}
+
+.mini_box {
+  border: solid rgb(138, 138, 224) 1px;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+  background-color: rgb(138, 138, 224);
+  font-family: 'GilbeotRainbow';
+  text-align: center;
+  font-size: 20px;
+  margin:15px 5px 15px 0px;
+}
+.present_box {
+  border: solid rgb(238, 192, 107) 1px;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+  background-color: rgb(238, 192, 107);
+  font-family: 'GilbeotRainbow';
+  text-align: center;
+  font-size: 20px;
+  margin: 15px 5px 15px 0px;
+}
+.mini_box:hover {
+  background-color: rgb(106, 51, 179);
+}
+.present_box:hover {
+  background-color: rgb(106, 51, 179);
+}
+.menu_box a {
+  color:  black;
+}
+.menu_box a:hover {
+  color: white;
+}
+.fake_box {
+  border: solid rgb(230, 228, 228) 1px;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+  background-color: rgb(230, 228, 228);
+  font-family: 'GilbeotRainbow';
+  text-align: center;
+}
+.png_box {
+  display: flex;
+  flex: 1;
+  margin: 8px;
+  padding: 19px;
+}
+.gif_box {
+  display: flex;
+  flex: 1;
+  margin: 8px;
+  align-items: center;
+  padding-left: 120px;
+}
+.content_box2 {
+  background-color: white;
+  border-radius: 9px;
+  display: flex;
+  flex: 1.8;
+  padding: 10px;
+  font-family: 'CookieRun-Regular';
+}
+.etc_box {
+  display: flex;
+  flex: 0.2;
+  margin: 8px;
+  padding-left: 10px;
+}
+
+.e_box {
+  border: salmon solid 1px;
+  background-color: salmon;
+  border-radius: 6px;
+  color: white;
+  margin: 1px;
+  text-align: center;
+  margin: 5px;
+}
+.e_box2 {
+  border: seagreen solid 1px;
+  background-color: seagreen;
+  border-radius: 6px;
+  color: white;
+  margin: 1px;
+  text-align: center;
+  margin: 5px;
+}
+option {
+  font-family: 'GilbeotRainbow';
+  text-align: center;
+  font-size: 15px;
+}
+.container {
+  top: 50px;
+  position: relative;
+}

@@ -1,0 +1,70 @@
+.calender {
+    flex-flow: wrap;
+    display: flex;
+    margin: 5px;
+    flex-direction: row;
+    flex: 8;
+    border: solid white 1px;
+}
+.calender div {
+    margin: 5px;
+}
+.today {
+    margin: 5px;
+    flex: 1;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 20px;
+    border: solid white 1px;
+    color: rgb(79, 171, 214);
+}
+.temp_box {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    flex: 1;
+}
+.time_box {
+    color: rgb(79, 171, 214);
+    margin: 5px;
+    border: solid rgb(255, 255, 255) 1px;
+    font-size: 20px;
+}
+.big_box {
+    flex: 8;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(180, 180, 180) 1px;
+}
+.mid_box {
+    margin: 10px;
+    border: solid rgb(255, 255, 255) 1px;
+    flex-direction: column;
+}
+.text_box {
+    text-align: center;
+    border: solid rgb(255, 255, 255) 1px;
+    margin: 10px;
+    line-height: 160%;
+    font-size: 20px;
+}
+.secret button{
+    text-align: center;
+    border: solid rgb(255, 255, 255) 1px;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    background-color:white;
+    border-radius: 9px;
+}
+.secret :hover {
+    background-color: tomato;
+    transition: 800ms ease all;
+}
+.center {
+    align-items: center;
+}
+#sBox {
+    display: none;
+}

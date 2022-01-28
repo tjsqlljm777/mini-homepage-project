@@ -1,0 +1,82 @@
+.column6 {  
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.column6 button {
+  align-items: center;
+}
+  .content_box {  
+    background-color: white;
+    border: solid rgb(182, 182, 182) 1px;
+    border-radius: 9px;   
+  }
+  .news_box1 {  
+    display: flex;
+    flex: 0.8;
+    flex-direction: column;
+    margin: 7px;
+  }
+  .mini_title {  
+    display: flex;
+    flex: 0.2;
+    flex-direction: column;
+  }
+  .d_box1 {  
+    display: flex;
+    flex: 5;
+    flex-direction: row;
+  }
+  .d_box2 {  
+    display: block;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .d_box3 {  
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .box { 
+    display: block;
+    flex: 1;
+    margin: 5px;
+  }
+  .dot_box {  
+    display: flex;
+    flex: 1;
+    border: dashed 1px;
+    border-color: white white gray white;
+    margin: 5px;
+  }
+  .news_box2 {  
+    display: flex;
+    flex: 1.5;
+    flex-direction: column;
+    margin: 7px;
+  }
+  u.dot {  
+    border-bottom: 1px solid #999;
+    text-decoration: none; 
+    font-size: 25px;
+  }
+  .scroll {
+    overflow: auto;
+  }
+  .img_title {
+    border: rgb(124, 188, 190) solid 1px;
+    border-radius: 5px;
+    background-color: rgb(124, 188, 190);
+    font-family: 'GilbeotRainbow';
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;
+  }
+  .scroll img{
+    width: 80%;
+  }
+  .center {
+    text-align: center;
+  }
